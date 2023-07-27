@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url(Red_Hat_Display/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'red Hat Display';
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/pattern-background-desktop.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-color: #dfe8ff;
+}
+.card {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 25px -10px gray;
+}
+.card .photo {
+  width: 100%;
+  height: 32%;
+}
+.card .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.content {
+  padding: 25px 35px;
+}
+
+.card h2 {
+  margin: 25px 15px 20px 15px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.card p {
+  font-size: 1rem;
+  color: #9498a2;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.annual-plan {
+  background-color: #f8f9fe;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.annual-plan img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.annual-plan .text {
+  margin: 10px;
+}
+
+.annual-plan h3 {
+  font-size: 1rem;
+}
+.annual-plan .price {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9498a2;
+  margin-right: 15px;
+}
+.annual-plan a {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: blue;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.annual-plan a:hover {
+  text-decoration: underline;
+}
+
+button.proceed {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: 800;
+  border: none;
+  box-shadow: 0px 10px 25px -10px gray;
+}
+button.proceed:hover {
+  opacity: 0.4;
+}
+
+button.cancel {
+  margin: 10px;
+  background-color: white;
+  border: none;
+  color: #9498a2;
+  font-weight: 800;
+}
+button.cancel:hover {
+  color: black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 300px;
+  }
+  .annual-plan img {
+    width: 40px;
+    height: 40px;
+  }
+  .annual-plan h3 {
+    font-size: 0.8rem;
+  }
+  .annual-plan .price {
+    font-size: 0.7rem;
+  }
+  .annual-plan a {
+    font-size: 0.7rem;
+  }
+}
+
